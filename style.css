@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid gray;
+    
+}
+.main_menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+h1 {
+    font-size: 39px;
+}
+h3, h4 {
+    color: gray;
+}
+a {
+    color: gray;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: lightgray;
+}
+.start_btn {
+    margin: 50px;
+    background-color: lightgray;
+    width: 100px;
+    height: 50px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.start_btn:hover  {
+    box-shadow: 0 0 14px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.start_btn:active {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.hidden {
+    display: none !important;
+}
+.game_started_menu {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    
+    
+}
+.timer {
+    position: relative;
+    bottom: -105%;
+    left: 50%;
+    
+}
+.start_again {
+    position: relative;
+    top: -30%;
+    left: 40%;
+    margin: 50px;
+    background-color: lightgray;
+    width: 100px;
+    height: 5%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+
+.start_again:hover{
+    box-shadow: 0 0 14px rgba(0,0,0,0.5);
+    cursor: pointer;
+    
+}
+
+.start_again:active{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    
+}
+
+#start_again2 {
+    top: 20% !important;
+    left: 0% !important;
+    z-index: 20;
+    opacity: 1;
+}
+
+.baloon1 {
+    width: 15px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: red;
+    position: absolute;
+    top: 630px;
+    left: 10%;
+    pointer-events: none;
+}
+
+
+.baloon_area {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    /* cursor:  url(n.png) 1 80, auto; */
+}
+
+.needle {
+    height: 50px;
+    width: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    border: 10px solid transparent; 
+    border-top: 10px solid green;
+}
+#passed {
+    position: absolute;
+    left: 0;
+    margin: 10px;
+}
+#blown {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+}
+#end_game_container {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 1;
+    z-index: 10;
+}
+.end_game {
+    position:absolute;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5px solid gray;
+    z-index: 15;
+    text-align: center;
+    opacity: 1;
+}
