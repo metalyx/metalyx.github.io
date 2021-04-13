@@ -59,10 +59,16 @@ function create () {
     var color = Colors[getRandomInt(0, 8)];
     var border_radius = parseInt(radius);
     
-    var top = "680px";
+    
 
     var theCSSprop = window.getComputedStyle(game_started_menu, null).getPropertyValue("width");
+    var theCSSproph = window.getComputedStyle(game_started_menu, null).getPropertyValue("height");
+
     
+    var top = theCSSproph;
+    //top = "680px";
+
+
     var left = getRandomInt(10, parseInt(theCSSprop)-20) + "px";
     
     var random_balloon = document.createElement("div");
